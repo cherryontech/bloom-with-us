@@ -19,3 +19,16 @@ This is the project repo for the Neptune Navigators! Our application will focus 
 - **DraftUI**
 
 - **Netlify**
+
+# Prerequisites 
+Ensure you have the following installed:
+
+- Node.js
+
+# Installation
+```
+git clone https://github.com/cherryontech/bloom-with-us.git && cd bloom-with-us
+npm install
+```
+# How the Project Was Set Up  
+- Documentation on how we set up the project here: https://neptunedevs.atlassian.net/wiki/x/AQBp 
