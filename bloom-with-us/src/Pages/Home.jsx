@@ -23,9 +23,6 @@ function HomePage() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
       </div>
       <h1 className="text-3xl font-bold underline text-blue-700">
         Hello, Bloom with Us!
