@@ -1,49 +1,73 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import bloomWithUsLogo from "../../assets/bloomwithus.svg";
 
 export default function Nav() {
+  const navigate = useNavigate();
   return (
     <nav
-      className="bg-blue-400 shadow shadow-gray-300 w-100 px-8 md:px-auto"
+      className="bg-blue-400 h-28 shadow shadow-gray-300 w-100 px-8 md:px-auto"
       style={{
         borderBottom: "24px solid #FFCF72",
         borderBottomLeftRadius: "12px",
         borderBottomRightRadius: "12px",
       }}
     >
-      <div className="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
-        <div className="text-black md:order-1">
-          <Link to={"/"}>
-            <svg
-              width="40px"
-              height="40px"
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g fill="currentColor">
-                <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0z" />
-                <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71l-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z" />
-              </g>
-            </svg>
-          </Link>
+      <div className="md:h-16 h-28 mx-auto container flex items-center justify-between flex-wrap md:flex-nowrap">
+        <div
+          className="text-black md:order-1 cursor-pointer"
+          onClick={() => navigate("/")}
+        >
+          <img
+            src={bloomWithUsLogo}
+            className="h-28 w-28 mt-6"
+            alt="Image of the Bloom with Us logo. The logo includes a blossomed flower with the words Bloom with Us and Slogan Text beneath it."
+          />
         </div>
         <div className="text-black order-3 w-full md:w-auto md:order-2">
           <ul className="flex font-semibold justify-between">
             <li className="md:px-4 md:py-2 text-black"></li>
-            <li className="md:px-4 md:py-2 hover:text-white">
-              <Link to={"#"}>About Us</Link>
+            <li
+              className="text-sm md:px-4 md:py-2 hover:text-white cursor-pointer"
+              onClick={() => navigate("/about-us")}
+            >
+              About Us
             </li>
-            <li className="md:px-4 md:py-2 hover:text-white">
-              <Link to={"/assessment-intro"}>Skill Assessment</Link>
+            <li
+              className="text-sm md:px-4 md:py-2 hover:text-white cursor-pointer"
+              onClick={() => navigate("/assessment-intro")}
+            >
+              Skills Assessment
             </li>
-            <li className="md:px-4 md:py-2 hover:text-white">
-              <Link to={"#"}>Goal/Progress Tracking</Link>
+            <li
+              className="text-sm md:px-4 md:py-2 hover:text-white cursor-pointer"
+              onClick={() => navigate("/goal-progress-tracking")}
+            >
+              Goal/Progress Tracking
             </li>
-            <li className="md:px-4 md:py-2 hover:text-white">
-              <Link to={"#"}>Resources</Link>
+            <li
+              className="text-sm md:px-4 md:py-2 hover:text-white cursor-pointer"
+              onClick={() => navigate("/resources")}
+            >
+              Resources
             </li>
-            <li className="md:px-4 md:py-2 hover:text-white">
-              <Link to={"/results-page"}>Results</Link>
+            <li
+              className="text-sm md:px-4 md:py-2 hover:text-white cursor-pointer"
+              onClick={() => navigate("/resources")}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
             </li>
           </ul>
         </div>
