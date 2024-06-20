@@ -30,12 +30,12 @@ export const buttonVariants = cva({
         'bg-white border-dark-purple border-2 px-5 py-2.5 text-center me-2 mb-2',
       primaryLightPurple:
         'bg-light-purple text-black px-5 py-2.5 text-center me-2 mb-2',
-      secondaryBlue:
-        'bg-white border-blue-400 border-2 text-black px-5 py-2.5 text-center me-2 mb-2',
+      primaryDarkPurple:
+        'bg-dark-purple text-black px-5 py-2.5 text-center me-2 mb-2'
     },
     size: {
       lg: 'h-12 px-6 text-lg',
-      md: 'h-10 px-4 text-base',
+      md: 'h-12 px-4 text-base',
       sm: 'h-8 px-3 text-sm',
       xs: 'h-6 px-2 text-xs',
       wide: 'h-10 px-4 text-base w-72',
