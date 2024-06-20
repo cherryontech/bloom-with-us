@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "skill": "Improve on Teamwork",
+        "taskList": [ 
+            {"id": 1, "title": "Collaborating with others to create compelling presentations", "description": "Conduct a presentation with your favorite topic and share details as to why you are presenting, how it contributes to your life and what aspect you could improve about it."},
+            {"id": 2, "title": "Working together to solve problems effectively", "description": "Organize a problem-solving session where the team tackles a real or hypothetical issue, brainstorming solutions and implementing the best one together."},
+            {"id": 3, "title": "Joining forces to successfully complete projects", "description": "implement a project where team members are assigned specific roles and responsibilities, requiring regular check-ins and collective effort to achieve the project's goals."}
+        ]
+    },
+    {
+        "id": 2,
+        "skill": "TBD",
+        "taskList": [ 
+            {"id": 1, "title": "...", "description": "..."},
+            {"id": 2, "title": "...", "description": "..."},
+            {"id": 3, "title": "...", "description": "..."}
+        ]
+    },
+    {
+        "id": 3,
+        "skill": "TBD",
+        "taskList": [ 
+            {"id": 1, "title": "...", "description": "..."},
+            {"id": 2, "title": "...", "description": "..."},
+            {"id": 3, "title": "...", "description": "..."}
+        ]
+    }
+]
