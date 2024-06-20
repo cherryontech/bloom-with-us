@@ -4,6 +4,7 @@ import { Button } from "../../components/button";
 import QuestionsSkillAssessment from "./QuestionsSkillAssessment";
 import skillsAndQuestions from "../../data/CareerPathSkills/customerSuccessManagerSkills.json";
 
+// ***** TO DO: Start off from where they last were, if they left in the midle ******
 export default function SkillsAssessment() {
   const [currentSkill, setCurrentSkill] = useState(0);
   const goToResults = useNavigate();

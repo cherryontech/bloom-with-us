@@ -47,7 +47,7 @@ export default function Nav() {
             <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
               <Button
                 size="nav-md"
-                onPress={() => navigate("/goal-progress-tracking")}
+                onPress={() => navigate("/progress-tracking")}
               >
                 {" "}
                 Progress Tracking{" "}
