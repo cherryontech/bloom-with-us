@@ -35,29 +35,26 @@ export default function Nav() {
                 About Us{" "}
               </Button>
             </li>
-            <li
-              className="md:px-4 md:py-2 hover:text-white cursor-pointer"
-              onClick={() => navigate("/assessment-intro")}
-            >
-              <Button size="nav-md" onPress={() => navigate("/about-us")}>
+            <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
+              <Button
+                size="nav-md"
+                onPress={() => navigate("/assessment-intro")}
+              >
                 {" "}
                 Skills Assessment Tools{" "}
               </Button>
             </li>
-            <li
-              className="md:px-4 md:py-2 hover:text-white cursor-pointer"
-              onClick={() => navigate("/goal-progress-tracking")}
-            >
-              <Button size="nav-md" onPress={() => navigate("/about-us")}>
+            <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
+              <Button
+                size="nav-md"
+                onPress={() => navigate("/goal-progress-tracking")}
+              >
                 {" "}
                 Progress Tracking{" "}
               </Button>
             </li>
-            <li
-              className="md:px-4 md:py-2 hover:text-white cursor-pointer"
-              onClick={() => navigate("/resources")}
-            >
-              <Button size="nav-md" onPress={() => navigate("/about-us")}>
+            <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
+              <Button size="nav-md" onPress={() => navigate("/resources")}>
                 {" "}
                 Resources{" "}
               </Button>
