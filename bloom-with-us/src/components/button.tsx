@@ -38,7 +38,8 @@ export const buttonVariants = cva({
       md: 'h-10 px-4 text-base',
       sm: 'h-8 px-3 text-sm',
       xs: 'h-6 px-2 text-xs',
-      wide: 'h-10 px-4 text-base w-72'
+      wide: 'h-10 px-4 text-base w-72',
+      'nav-md': 'h-10 text-base'
     },
   },
   defaultVariants: {
