@@ -8,6 +8,7 @@ export default {
     colors: {
       "dark-purple": "#9F86C0",
       "light-purple": "#BE95C4",
+      "dark-purple-text": "#231942",
     },
     extend: {
       gridTemplateRows: {

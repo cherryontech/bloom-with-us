@@ -27,9 +27,9 @@ export const buttonVariants = cva({
       gray:
         'bg-gray-300 text-black open:bg-slate-100 hover:bg-slate-700 dark:bg-gray-300 dark:text-slate-900 dark:open:bg-slate-800 dark:hover:bg-gray-400',
       secondaryDarkPurple:
-        'bg-white border-dark-purple border-2 px-5 py-2.5 text-center me-2 mb-2 w-48',
+        'bg-white border-dark-purple border-2 px-5 py-2.5 text-center me-2 mb-2',
       primaryLightPurple:
-        'bg-light-purple text-black px-5 py-2.5 text-center me-2 mb-2 w-48',
+        'bg-light-purple text-black px-5 py-2.5 text-center me-2 mb-2',
       secondaryBlue:
         'bg-white border-blue-400 border-2 text-black px-5 py-2.5 text-center me-2 mb-2',
     },

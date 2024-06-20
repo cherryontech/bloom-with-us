@@ -31,18 +31,22 @@ export default function SkillsAssessment() {
   return (
     <div className="flex flex-col mt-6">
       <div>
+        <h1 className="text-dark-purple-text text-4xl"> Skill Assessment </h1>
+      </div>
+
+      <div>
         <QuestionsSkillAssessment currentSkill={currentSkill} />
       </div>
 
       <div>
         <Button
-          variant="primaryBlue"
+          variant="secondaryDarkPurple"
           onClick={() => handleMoveToNextSkill("Yes")}
         >
           Yes
         </Button>
         <Button
-          variant="primaryYellow"
+          variant="secondaryDarkPurple"
           onClick={() => handleMoveToNextSkill("No")}
         >
           No

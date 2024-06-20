@@ -1,52 +1,17 @@
 [
     {
         "id": 1,
-        "skill": "Empathy",
-        "skillValidationQuestion": "Have you successfully resolved a customer's issue by understanding their emotions and perspective, such as when a frustrated client needed reassurance about a service delay?"
+        "skill": "Teamwork",
+        "skillValidationQuestions": ["I have worked with others to create a presentation.", "I have worked with others to figure out how to solve a problem.", "I have worked with others to complete a project."]
     },
     {
         "id": 2,
         "skill": "Communication",
-        "skillValidationQuestion": "Do you consistently receive compliments for your clear and concise communication style, especially when explaining complex solutions to customers?"
+        "skillValidationQuestions": ["I have effectively conveyed ideas and information in both written and verbal forms.", "I have actively listened to others to understand their perspectives and needs.", "I have provided clear and concise feedback to colleagues to improve collaboration."]
     },
     {
         "id": 3,
-        "skill": "Problem-solving",
-        "skillValidationQuestion": "Have you been able to quickly identify and solve complex customer issues, such as streamlining a common onboarding problem, leading to a significant reduction in complaints?"
-    },
-    {
-        "id": 4,
-        "skill": "Patience",
-        "skillValidationQuestion": "Are you known for maintaining composure and patience when dealing with highly demanding or difficult customers, such as during a product outage?"
-    },
-    {
-        "id": 5,
-        "skill": "Adaptability",
-        "skillValidationQuestion": "Have you successfully adapted to sudden changes in product features or policies that affected customers, ensuring they felt minimal impact, like during a software update roll out?"
-    },
-    {
-        "id": 6,
-        "skill": "Analytical Skills",
-        "skillValidationQuestion": "Do you effectively use customer data to make informed decisions that improve customer satisfaction and retention, such as tailoring service plans based on usage patterns?"
-    },
-    {
-        "id": 7,
-        "skill": "Proactive",
-        "skillValidationQuestion": "Are you proactive in anticipating customer needs or potential issues before they escalate, such as reaching out with solutions before a customer experiences a problem?"
-    },
-    {
-        "id": 8,
-        "skill": "Teamwork",
-        "skillValidationQuestion": "Have you led a team initiative that improved overall customer success metrics, such as a cross-departmental project to improve customer journey mapping?"
-    },
-    {
-        "id": 9,
-        "skill": "Leadership",
-        "skillValidationQuestion": "Have you successfully guided your team through a difficult period, maintaining team morale and customer service levels, such as during a major product recall?"
-    },
-    {
-        "id": 10,
-        "skill": "Conflict Resolution",
-        "skillValidationQuestion": "Are you effective at de-escalating conflicts with customers and finding mutually beneficial solutions, such as resolving a billing dispute that could have led to customer churn?"
+        "skill": "Time Management",
+        "skillValidationQuestions": ["I have created schedules and set deadlines to manage multiple responsibilities.", "I have used tools and techniques to track progress and stay organized.", "I have allocated time effectively to balance work, meetings, and personal tasks."]
     }
 ]

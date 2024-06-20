@@ -17,9 +17,15 @@ export default function QuestionsSkillAssessment({ currentSkill }) {
           {currentSkillDisplaying.skill}
         </h2>
 
-        <p className="text-gray-700 italic mb-6">
-          {currentSkillDisplaying.skillValidationQuestion}
-        </p>
+        <ul>
+          {currentSkillDisplaying.skillValidationQuestions.map((q) => {
+            return (
+              <li className="text-gray-700 italic mb-6" key={q}>
+                {q}
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
