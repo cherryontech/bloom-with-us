@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ResultsCard from "../../components/ResultsCard";
+import { Button } from "../../components/button";
 
 export default function ResultsPage() {
   //arrays that will hold responses
@@ -17,6 +18,12 @@ export default function ResultsPage() {
   return (
     <div className="flex flex-col mt-12">
       <ResultsCard yesAnswer={yesAnswers} noAnswer={noAnswers} />
+      <div className="pb-10">
+        <span className="text-xl"> Let&apos;s improve these skills </span>
+        <Button variant="primaryDarkPurple" className="ml-6">
+          Start here
+        </Button>
+      </div>
     </div>
   );
 }
