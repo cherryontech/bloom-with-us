@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import ResultsCard from "../../components/ResultsCard";
 import { Button } from "../../components/button";
+import { useNavigate } from "react-router-dom";
 
 export default function ResultsPage() {
+  const navigate = useNavigate();
   //arrays that will hold responses
   const [yesAnswers, setYesAnswers] = useState([]);
   const [noAnswers, setNoAnswers] = useState([]);
@@ -20,7 +22,11 @@ export default function ResultsPage() {
       <ResultsCard yesAnswer={yesAnswers} noAnswer={noAnswers} />
       <div className="pb-10">
         <span className="text-xl"> Let&apos;s improve these skills </span>
-        <Button variant="primaryDarkPurple" className="ml-6">
+        <Button
+          variant="primaryDarkPurple"
+          className="ml-6"
+          onPress={navigate("/upskill-selection")}
+        >
           Start here
         </Button>
       </div>
