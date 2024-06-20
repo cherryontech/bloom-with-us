@@ -1,8 +1,24 @@
+import { useEffect } from "react";
 import { Button } from "../components/button";
 import { useNavigate } from "react-router-dom";
+import skillsAndQuestions from "../data/CareerPathSkills/customerSuccessManagerSkills.json";
 
 export default function AssessmentIntro() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const yesAnswers = JSON.parse(localStorage.getItem("yesAnswers")) || [];
+    const noAnswers = JSON.parse(localStorage.getItem("noAnswers")) || [];
+
+    const complete =
+      yesAnswers.length + noAnswers.length == skillsAndQuestions.length;
+
+    if (complete) {
+      navigate("/results-page");
+    } else {
+      localStorage.clear();
+    }
+  }, [navigate]);
 
   function handleNextPressed() {
     console.log("Button pressed");
@@ -10,22 +26,22 @@ export default function AssessmentIntro() {
   }
 
   return (
-    <div className="flex flex-col p-20">
-      <h1 className="text-5xl text-start pb-8">
-        Hello, We&apos;re Bloom with Us!
+    <div className="grid grid-col-1 p-20">
+      <h1 className="text-5xl text-start text-dark-purple-text pb-8">
+        Hi, We&apos;re Bloom with Us!
       </h1>
-      <p className="text-base text-start pb-8">
+      <p className="text-base justify-self-center w-3/4 pb-8">
         We’re here to help you advance your career goals. Start by taking our
         skills assessment to see what skills you already possess and what skills
         we can help you improve upon.
       </p>
       <Button
-        variant="primaryYellow"
-        className="w-20 self-center"
+        variant="secondaryDarkPurple"
+        className="justify-self-center"
         onPress={handleNextPressed}
       >
         {" "}
-        Next{" "}
+        Start your Skill Assessment{" "}
       </Button>
     </div>
   );
