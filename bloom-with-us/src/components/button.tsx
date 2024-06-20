@@ -5,7 +5,7 @@ import { cva, cx } from '../../cva.config'
 
 export const buttonVariants = cva({
   base: [
-    'inline-flex items-center justify-center rounded-md font-semibold outline-none transition-colors',
+    'inline-flex items-center justify-center rounded-full font-semibold outline-none transition-colors',
     // Focus
     'focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 dark:focus:ring-slate-400 dark:focus:ring-offset-slate-900',
     // Disabled
