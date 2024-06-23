@@ -30,7 +30,7 @@ export default function Nav() {
         <div className="text-black order-3 w-full md:w-auto md:order-2">
           <ul className="flex font-semibold justify-between">
             <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
-              <Button size="nav-md" onPress={() => navigate("/about-us")}>
+              <Button size="nav-md" onPress={() => navigate("/coming-soon")}>
                 {" "}
                 About Us{" "}
               </Button>
@@ -54,7 +54,7 @@ export default function Nav() {
               </Button>
             </li>
             <li className="md:px-4 md:py-2 hover:text-white cursor-pointer">
-              <Button size="nav-md" onPress={() => navigate("/resources")}>
+              <Button size="nav-md" onPress={() => navigate("/coming-soon")}>
                 {" "}
                 Resources{" "}
               </Button>
