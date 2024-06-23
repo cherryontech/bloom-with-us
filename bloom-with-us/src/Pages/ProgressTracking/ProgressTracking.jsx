@@ -16,14 +16,17 @@ export default function ProgressTracking() {
         tempSkill.push({ id: item.id, skill: item.skill });
       }
     });
-    const index =
-      skilltasks.findIndex((value) => value.id == tempSkill[0].id) || 0;
-    setDisplayingSkillIndex(index);
     setSelectedSkills(tempSkill);
   }, []);
 
   useEffect(() => {
     console.log(selectedSkills);
+    if (selectedSkills.length > 0) {
+      const index = skilltasks.findIndex(
+        (value) => value.id == selectedSkills[0].id
+      );
+      setDisplayingSkillIndex(index);
+    }
   }, [selectedSkills]);
 
   return (
@@ -45,8 +48,8 @@ export default function ProgressTracking() {
                 return (
                   <li key={item.id}>
                     <TaskCard
-                      title={item.title}
-                      description={item.description}
+                      task={item}
+                      displayingSkillIndex={displayingSkillIndex}
                     />
                   </li>
                 );
